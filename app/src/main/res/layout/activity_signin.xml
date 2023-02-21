@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/_15sdp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Signin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:ignore="MissingClass">
+
+        <EditText
+            android:id="@+id/username_login"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewborder"
+            android:gravity="left"
+            android:textSize="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:hint="Email"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/pswd_login"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/edittextview_username"
+            android:hint="Password"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+            android:inputType="textPassword"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/textviewborder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="Forgot Password?"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_gravity="right"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/invalidemailorpswd"
+            android:textSize="@dimen/_12ssp"
+            android:text="Email or password is incorrect.\nPlease try again"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:textColor="#F90808"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@+id/edittextview_pswd"
+            android:background="@drawable/buttonbackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createnewaccount"
+            android:textSize="@dimen/_15ssp"
+            android:text="Create new Account?"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="------------------------OR----------------------------"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:id="@+id/google_icon"
+            android:layout_gravity="center"
+            android:contentDescription="Logo"
+            android:src="@drawable/google_icon" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:id="@+id/phone_icon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:contentDescription="Logo"
+            android:src="@drawable/phone_icon" />
+
+    </LinearLayout>
+
+</LinearLayout>
